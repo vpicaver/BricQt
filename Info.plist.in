@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!--<key>CFBundleName</key> <string>@PRODUCT_NAME@</string>-->
+  <key>CFBundleName</key> <string>appBricQt</string>
+  <key>CFBundleDisplayName</key> <string>BricQt</string>
+  <!--<key>CFBundleIdentifier</key> <string>@MACOSX_BUNDLE_GUI_IDENTIFIER@</string>-->
+  <key>CFBundleIdentifier</key> <string>com.vadosesolutions.appBricQt</string>
+  <key>CFBundleVersion</key> <string>@PROJECT_VERSION@</string>
+  <key>CFBundleShortVersionString</key> <string>@PROJECT_VERSION@</string>
+  <key>CFBundleExecutable</key> <string>appBricQt</string>
+
+  <!-- Required for macOS 10.15+ and iOS 13+ -->
+  <key>NSBluetoothAlwaysUsageDescription</key>
+  <string>This app uses Bluetooth to connect to BRIC devices.</string>
+
+  <!-- iOS only: if you want BLE in background, add background modes -->
+  <key>UIBackgroundModes</key>
+  <array>
+    <string>bluetooth-central</string>
+    <string>bluetooth-peripheral</string>
+  </array>
+
+  <!-- iOS only: declare BLE capability -->
+
+  <key>UIRequiredDeviceCapabilities</key>
+  <array>
+    <string>bluetooth-le</string>
+  </array>
+
+</dict>
+</plist>
